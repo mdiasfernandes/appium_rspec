@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-describe 'subzero login' do
+describe 'app login' do
   context 'login path done successfuly' do
     it 'happy path' do
       login_field = driver.find_element(:xpath, '//XCUIElementTypeTextField[@name="email"]')
