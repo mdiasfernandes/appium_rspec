@@ -39,10 +39,8 @@ RSpec.configure do |config|
     @implicit_wait_timeout = 15
     if (ENV['MOBILE_TARGET'] == 'ios')
       @driver = Appium::Driver.new(opts_ios, true).start_driver
-    else
-      @driver = Appium::Driver.new(opts_android, true).start_driver
     end
-    # @driver = Appium::Driver.new(opts, true).start_driver
+    @driver = Appium::Driver.new(opts_android, true).start_driver
     @driver.manage.timeouts.implicit_wait = @implicit_wait_timeout
     Appium.promote_appium_methods Object
   end
