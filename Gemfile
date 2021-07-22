@@ -2,6 +2,7 @@
 
 source "https://rubygems.org"
 
+ruby '2.7.0'
 
 gem 'appium_lib'
 gem 'rspec'
